@@ -1,4 +1,5 @@
 import { Component, OnInit, NgModule } from '@angular/core';
+import { ButtonModule } from 'primeng/button';
 
 import { CommonModule } from '@angular/common';
 
@@ -23,6 +24,7 @@ export class UsersListPageComponent implements OnInit {
 @NgModule({
   imports: [
     CommonModule,
+    ButtonModule
   ],
   exports: [UsersListPageComponent],
   declarations: [UsersListPageComponent],
