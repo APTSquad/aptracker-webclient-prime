@@ -1,36 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { UsersListPageComponent } from './users-page';
 
-import { ClientListPageComponent } from './users-page';
-import {
-  MatFormFieldModule,
-  MatTableModule,
-  MatPaginatorModule,
-  MatInputModule,
-  MatIconModule
-} from '@angular/material';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-describe('ClientListPageComponent', () => {
-  let component: ClientListPageComponent;
-  let fixture: ComponentFixture<ClientListPageComponent>;
+describe('UsersListPageComponent', () => {
+  let component: UsersListPageComponent;
+  let fixture: ComponentFixture<UsersListPageComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [
-        MatFormFieldModule,
-        MatTableModule,
-        MatPaginatorModule,
-        MatInputModule,
-        MatIconModule,
-        BrowserAnimationsModule
-      ],
-      declarations: [ClientListPageComponent]
+      declarations: [UsersListPageComponent]
     })
       .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ClientListPageComponent);
+    fixture = TestBed.createComponent(UsersListPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
